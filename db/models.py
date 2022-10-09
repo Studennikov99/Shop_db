@@ -28,8 +28,6 @@ class Pants(Base):
     pants_in_stock = Column(Integer)
 
 
-    # region = relationship("Region", back_populates="sources")
-
 
 class Sneakers(Base):
     __tablename__ = "Кроссовки"
