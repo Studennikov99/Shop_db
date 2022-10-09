@@ -15,10 +15,6 @@ class Shirts(Base):
     shirts_price = Column(Integer)
     shirts_in_stock = Column(Integer)
 
-    # sources = relationship("Source", back_populates="region")
-    # def __repr__(self):
-    #    return f"{self.uid}. {self.region_name}. {self.region_code}"
-
 
 class Pants(Base):
     __tablename__ = "Штаны"
@@ -45,10 +41,6 @@ class Sneakers(Base):
     sneakers_colour = Column(Text)
     sneakers_price = Column(Integer)
     sneakers_in_stock = Column(Integer)
-
-
-    # def __repr__(self):
-    #    return f"{self.channel_name}. {self.channel_owner}. {self.channel_id}. {self.channel_type}. {self.invite_link}"
 
 
 class Buy(Base):
@@ -81,5 +73,3 @@ class Buyer(Base):
     name = Column(Text)
     surname = Column(Text)
     discount = Column(Integer)
-    # def __repr__(self):
-    #    return f"{self.channel_name}. {self.channel_owner}. {self.channel_id}. {self.channel_type}. {self.invite_link}"
